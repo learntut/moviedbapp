@@ -1,0 +1,16 @@
+doctype html
+html(lang=en)
+    head
+        title=pagetitle
+    body
+        table
+            tr
+                th genre
+        tbody
+            if (rows.length)
+                - each item in rows
+                    tr
+                        td=item.genreName
+            else
+                
+
